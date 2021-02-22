@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'TemplateController@index');
 
+Route::get('/reg', 'CustomerRegister@register');
+
 Route::get('/login', function () {
     return view ('FrontEnd.login');
 });
